@@ -1,0 +1,19 @@
+﻿<link rel="stylesheet" type="text/css" href="/cms/hat.css">
+
+<div class="header">
+ <div class="box">
+   <div class="logo"><a href="#" title="乐佳乐器旗舰店"></a></div>
+   <div class="nav">
+   <map>
+{pc:content action="category" catid="0" num="25" siteid="$siteid" order="listorder ASC"}
+   <ul>
+   <li><h4><a href="{siteurl($siteid)}" title="网站首页"><i>HOME</i><span>首页</span></a></h4></li>
+   {loop $data $r}
+   <li><h4><a href="{$r[url]}"><i>{$r[catdir]}</i><span>{$r[catname]}</span></a></h4></li>
+   {/loop}
+   </ul>
+{/pc}
+</map>
+   </div>
+ </div>
+</div>
